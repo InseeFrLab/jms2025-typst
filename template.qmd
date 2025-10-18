@@ -1,0 +1,72 @@
+---
+title: Échantillonnage optimum sous contraintes fortes
+authors:
+  - name: Antoine DUPONT
+    affiliation: Insee, Direction de la méthodologie et de la coordination statistique et internationale
+    email: <antoine.dupont@insee.fr>
+  - name: Alii
+    affiliation: Insee, Département de la Démographie
+keywords: # 6 maximum
+  - échantillonnage
+  - calage
+  - collecte
+  - équilibrage
+  - multimode
+  - séries temporelles
+domains: # utiliser la nomenclature du site (menu déroulant) 
+  - enquêtes
+  - sondages
+resume: |
+    (entre 350 et 900 mots environ)\ 
+    `#lorem(30)`{=typst}
+abstract: |
+    (Texte en anglais de 5 à 10 lignes)\ 
+    `#lorem(30)`{=typst}
+bibliography: references.bib
+format:
+  jms2025-typst:
+    logo:
+      location: center-top # ne pas modifier
+      width: 160mm # ne pas modifier
+    mainfont: "tex gyre heros" # peut être modifié pour "calibri" sous windows, voir le script install-fonts.sh
+    footer: 15^e^ édition des journées de méthodologie statistique de l'Insee (JMS 2025) # ne pas modifier
+    section-numbering: 1.1.1.
+    keep-typ: true
+---
+
+## Titre de niveau 1 numéroté
+
+Cet article reprend et enrichit une problématique déjà présentée aux JMS 2000. Il s’agit de constituer, au sein d’une population de référence, des classes présentant des conditions d’homogénéité ou d’hétérogénéité maximales vis-à-vis de certaines caractéristiques quantitatives.
+
+Le projet Nautile va se substituer au projet Octopusse : mais la filiation est claire.
+Il est possible en fait de généraliser cette notion d’inertie en introduisant une pseudo-distance  entre les unités de la population de référence, non nécessairement euclidienne, et non nécessairement nulle lorsqu’on mesure la distance d’une unité à elle-même. Sous réserve de donner des poids à chaque unité de la population, l’inertie d’une classe K sera donnée par :
+
+$$
+I(K) = \frac{1}{2}\frac{\sum_{i \in K} \sum_{j \in K} \alpha_{i} \alpha_{j} d_{i,j}^2}{\sum_{i \in K} \alpha_{i}}
+$$
+
+Cette formule redonne l’expression de la variance de la classe lorsque la distance considérée $d_{i,j}$ est euclidienne.
+
+Dans le second groupe d’exemples, on cherchera à appliquer ces techniques à des cas non euclidiens, par exemple en comparant département de naissance et département de résidence.
+
+Une référence à la bibliographie [@elstonlatafa1994].
+
+### Titre de niveau 2 numéroté
+
+```{=typst}
+#lorem(100)
+```
+\
+
+Un exemple de note de bas de page[^1]
+
+[^1]: « Un algorithme de regroupement d’unités statistiques selon certains critères de similitude », Marc CHRISTINE et Michel ISNARD, VIIèmes  Journées de Méthodologie statistique, 4-5 décembre 2000.
+
+#### Titre de niveau 3 numéroté
+
+```{=typst}
+#lorem(40)
+```
+\
+
+Une autre référence à la bibliographie [@eratosthene].
