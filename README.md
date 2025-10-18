@@ -26,7 +26,7 @@ sudo ./install-fonts.sh
 
 Pour que cette extension fonctionne, vous devez avoir un fichier `_quarto.yml`, même minimal tel que celui-ci :
 
-```yaml
+```{.yaml filename="_quarto.yml"}
 project:
   type: default
 ```
