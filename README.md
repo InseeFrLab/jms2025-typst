@@ -1,4 +1,4 @@
-# jms2025-typst : un format Quarto pour les JMS2025
+# jms2025-typst : un format Quarto pour les [JMS2025](https://journees-methodologie-statistique.insee.net/)
 
 ## Installation et configuration
 
