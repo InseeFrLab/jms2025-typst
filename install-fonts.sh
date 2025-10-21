@@ -11,6 +11,9 @@ fi
 echo "✅ Updating package lists..."
 apt update -y
 
+echo "📦 Installing fontconfig..."
+apt install -y fontconfig
+
 echo "📦 Installing TeX Gyre fonts..."
 apt install -y fonts-texgyre
 
