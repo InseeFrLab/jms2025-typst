@@ -127,7 +127,7 @@
       })
 
     emph(align(center)[
-      #set text(size: 1.1em)
+      #set text(size: 1.1em, hyphenate: false)
       #authors.map(author => {
         let (name, stars, ) = author
         name + " " + stars
