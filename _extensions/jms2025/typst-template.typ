@@ -100,7 +100,7 @@
       #set par(leading: heading-line-height)
       #if (heading-family != none or heading-weight != "bold" or heading-style != "normal"
            or heading-color != black) {
-        set text(font: heading-family, weight: heading-weight, style: heading-style, fill: heading-color)
+        set text(font: heading-family, weight: heading-weight, style: heading-style, fill: heading-color, hyphenate: false)
         text(size: title-size)[#smallcaps[#title]]
         if subtitle != none {
           parbreak()
