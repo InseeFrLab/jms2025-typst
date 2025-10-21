@@ -151,11 +151,15 @@
     arr
   }
 
-  if keywords.len() > 0 {
+    if keywords.len() > 0 {
     block[
       #set par(justify: false)
       #set text(size: 1.1em)
-      #strong[Mots-clés] : #capitalize-first-word(keywords).join(", ")
+      #strong[Mots-clés] : #if type(keywords) == array {
+        capitalize-first-word(keywords).join(", ")
+      } else {
+        capitalize(keywords)
+      }
     ]
   }
 
@@ -163,7 +167,11 @@
     block[
       #set par(justify: false)
       #set text(size: 1.1em)
-      #strong[Domaines] : #capitalize-first-word(domains).join(", ")
+      #strong[Domaines] : #if type(domains) == array {
+        capitalize-first-word(domains).join(", ")
+      } else {
+        capitalize(domains)
+      }
     ]
   }
 
