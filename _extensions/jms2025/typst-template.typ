@@ -73,10 +73,13 @@
            region: region,
            font: font,
            size: fontsize)
+
   set heading(numbering: sectionnumbering)
-  show heading.where(level: 1): set text(size: 1em)
-  show heading.where(level: 2): set text(size: 1.1em)
-  show heading.where(level: 3): set text(size: 1em)
+  show heading: set text(size: 1.1em)
+  show heading.where(level: 1): set block(below: 1.2em, above: 1.6em)
+  show heading.where(level: 2): set block(below: 1.2em, above: 1.6em)
+  show heading.where(level: 3): set block(below: 1.2em, above: 1.6em)
+  
   show footnote: set text(size: 1.2em) // taille de l'appel de note dans le corps du texte
   set footnote.entry(indent: 0em) // indentation dans la note de bas de page
   // modifie les tailles dans la note de bas de page
