@@ -151,10 +151,13 @@
     arr
   }
 
+    v(15pt)
+
+
     if keywords.len() > 0 {
     block[
       #set par(justify: false)
-      #set text(size: 1.1em)
+      #set text(size: 0.95em)
       #strong[Mots-clés] : #if type(keywords) == array {
         capitalize-first-word(keywords).join(", ")
       } else {
@@ -166,7 +169,7 @@
   if domains.len() > 0 {
     block[
       #set par(justify: false)
-      #set text(size: 1.1em)
+      #set text(size: 0.95em)
       #strong[Domaines] : #if type(domains) == array {
         capitalize-first-word(domains).join(", ")
       } else {
@@ -181,19 +184,32 @@
     ]]
   }
 
+    align(center)[
+      #line(length: 50%, stroke: 1pt + rgb("#633250"))
+    ]  
+
   if resume != none {
+
     block[
       #text(weight: "semibold", size: 1.2em)[Résumé] \ 
-      #emph(resume)
+      #v(3pt) 
+      #text(size: 0.9em)[#resume]
+      #v(8pt) 
     ]
   }
 
   if abstract != none {
     block[
       #text(weight: "semibold", size: 1.2em)[#abstract-title] \ 
-      #emph(abstract)
+      #v(3pt) 
+      #text(size: 0.9em)[#abstract]
+      #v(8pt) 
     ]
   }
+
+  align(center)[
+    #line(length: 50%, stroke: 1pt + rgb("#633250"))
+  ]
 
   if toc {
     let title = if toc_title == none {
