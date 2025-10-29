@@ -240,3 +240,7 @@
   inset: 6pt,
   stroke: none
 )
+
+#show figure.where(
+): set figure(scope: "parent", placement: auto)
+
