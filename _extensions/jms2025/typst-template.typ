@@ -244,7 +244,12 @@
   inset: 6pt,
   stroke: none
 )
+#show table.cell.where(y: 0): strong
+#show table.cell: set text(size: 0.8em)
+
 
 #show figure.where(
 ): set figure(scope: "parent", placement: auto)
+#show figure: set text(size: 0.9em)
+#show figure: set block(inset: (bottom: 0.2em))
 
