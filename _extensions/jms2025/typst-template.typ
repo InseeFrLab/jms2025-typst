@@ -68,7 +68,7 @@
       }
     }
   )
-  set par(justify: true)
+  set par(justify: true, first-line-indent: (amount: 1em, all: true))
   set text(lang: lang,
            region: region,
            font: font,
@@ -199,6 +199,7 @@
 
     block[
       #text(weight: "semibold", size: 1.2em)[Résumé] \ 
+      #set par(justify: true, first-line-indent: 1em)
       #v(3pt) 
       #text(size: 0.9em)[#resume]
       #v(8pt) 
@@ -208,6 +209,7 @@
   if abstract != none {
     block[
       #text(weight: "semibold", size: 1.2em)[#abstract-title] \ 
+      #set par(justify: true, first-line-indent: 1em)
       #v(3pt) 
       #text(size: 0.9em)[#abstract]
       #v(8pt) 
